@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Priya Rajan | Data Analyst Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#110200",
+                    "outline": "#74777f",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "on-tertiary-fixed-variant": "#6b3a25",
+                    "surface-container": "#ebeef0",
+                    "primary-fixed": "#d4e3ff",
+                    "secondary-container": "#dfe0e0",
+                    "on-tertiary-fixed": "#351002",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#e2e2e2",
+                    "tertiary-fixed-dim": "#fdb69a",
+                    "secondary": "#5d5f5f",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#d7dadc",
+                    "on-secondary-container": "#616363",
+                    "on-tertiary-container": "#b5785f",
+                    "surface-tint": "#476083",
+                    "surface-container-highest": "#e0e3e5",
+                    "primary": "#000613",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#f7fafc",
+                    "outline-variant": "#c4c6cf",
+                    "secondary-fixed-dim": "#c6c6c7",
+                    "surface-variant": "#e0e3e5",
+                    "on-surface-variant": "#43474e",
+                    "tertiary-container": "#391303",
+                    "on-error": "#ffffff",
+                    "on-background": "#181c1e",
+                    "on-secondary-fixed-variant": "#454747",
+                    "tertiary-fixed": "#ffdbce",
+                    "on-surface": "#181c1e",
+                    "primary-container": "#001f3f",
+                    "surface": "#f7fafc",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#afc8f0",
+                    "surface-container-low": "#f1f4f6",
+                    "inverse-surface": "#2d3133",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#001c3a",
+                    "background": "#f7fafc",
+                    "surface-container-high": "#e5e9eb",
+                    "on-primary-container": "#6f88ad",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#eef1f3",
+                    "primary-fixed-dim": "#afc8f0",
+                    "on-primary-fixed-variant": "#2f486a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1200px",
+                    "section-padding-mobile": "40px",
+                    "base": "8px",
+                    "section-padding-desktop": "80px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "button-text": ["Montserrat"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "display-lg-mobile": ["Montserrat"],
+                    "label-caps": ["Inter"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "button-text": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-nav { border-bottom: 2px solid #fdb69a; color: #000613; padding-bottom: 4px; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="bg-surface/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant dark:border-on-surface-variant/20">
+<nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-16">
+<a class="text-headline-md font-bold text-primary" href="#">Priya Rajan</a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-button-text text-button-text text-secondary hover:text-tertiary-fixed-dim transition-all duration-200" href="#about">About</a>
+<a class="font-button-text text-button-text text-secondary hover:text-tertiary-fixed-dim transition-all duration-200" href="#skills">Skills</a>
+<a class="font-button-text text-button-text text-secondary hover:text-tertiary-fixed-dim transition-all duration-200" href="#projects">Projects</a>
+<a class="font-button-text text-button-text text-secondary hover:text-tertiary-fixed-dim transition-all duration-200" href="#contact">Contact</a>
+<a class="bg-tertiary-container text-tertiary-fixed font-button-text text-button-text px-6 py-2 rounded-lg hover:opacity-80 transition-all" href="#contact">Hire Me</a>
+</div>
+<!-- Mobile Menu Icon (Simplified for UI task) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main>
+<!-- Section 1: Hero -->
+<section class="relative min-h-screen flex items-center justify-center text-center px-gutter py-section-padding-desktop bg-surface" id="hero">
+<div class="max-w-4xl mx-auto z-10">
+<p class="font-label-caps text-label-caps text-on-tertiary-container mb-4 tracking-widest">DATA ANALYST INTERN CANDIDATE</p>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">Priya Rajan</h1>
+<p class="font-body-lg text-body-lg text-secondary mb-10 max-w-2xl mx-auto">
+                    Turning numbers into decisions that matter. Specialized in extracting narrative clarity from complex datasets.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="bg-tertiary-container text-tertiary-fixed font-button-text text-button-text px-10 py-4 rounded-lg hover:shadow-xl transition-all w-full sm:w-auto" href="#projects">
+                        View My Work
+                    </a>
+<a class="border border-primary text-primary font-button-text text-button-text px-10 py-4 rounded-lg hover:bg-primary hover:text-on-primary transition-all w-full sm:w-auto" href="#contact">
+                        Get In Touch
+                    </a>
+</div>
+</div>
+<!-- Subtle background decorative element -->
+<div class="absolute inset-0 opacity-5 pointer-events-none overflow-hidden">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary rounded-full blur-[120px]"></div>
+</div>
+</section>
+<!-- Section 2: About -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter max-w-container-max mx-auto border-t border-outline-variant/10" id="about">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="flex justify-center">
+<div class="relative group">
+<div class="absolute -inset-1 bg-tertiary-fixed-dim rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+<img alt="Priya Rajan" class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-surface shadow-lg" data-alt="A professional portrait of a young Indian woman with a confident smile, wearing a business casual navy blazer. The background is a clean, minimalist studio setting with soft, high-key lighting. The overall aesthetic is professional, modern, and trustworthy, reflecting a minimalist corporate portfolio style with a focus on human connection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTRpdBAin8VsS8sjjsCRqSZPEK7LtTwMdnFUVYdI_y5gS9dXZxZ3Qj1mfSv1enJCAnHhTA3TFxz05-wo9bqO1jjqCptPfxWarzztqYoSI-wOhZVra8DqjZThSAKDqvZ57y3SnNtwGAvozH3ji3Muu0JkTrUogIYRICpUBtVF0ArW2EeLxaV0EfQVaSyTFQlFGT6QDd1SK3DW_6Zvr8cIbfGIYFqALkqgorAwCYpOgpESShFn1Ctd9hjvB3zIWor9AilIBSdCIDBa4"/>
+</div>
+</div>
+<div class="space-y-6">
+<h2 class="font-headline-md text-headline-md text-primary flex items-center gap-3">
+<span class="w-12 h-[2px] bg-tertiary-fixed-dim"></span>
+                        About Me
+                    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        I am a third-year CS student at Anna University in Chennai. For the past two years, the thing I have spent most of my time on is data — specifically, how to make large, messy datasets tell clear, useful stories. 
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        I built a fraud detection model for a university project that identified suspicious patterns in financial transaction data with about 87% accuracy, and I loved every part of that project.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Right now, I am teaching myself machine learning and actively looking for a data analytics internship where I can work on real problems with real data. If you are hiring for a data role, I would love to talk.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Section 3: Skills -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-container-low px-gutter" id="skills">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-md text-headline-md text-primary mb-12 text-center">Technical Arsenal</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Skill Card 1 -->
+<div class="bg-surface border border-outline-variant p-8 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-on-tertiary-container mb-4 text-3xl">terminal</span>
+<h3 class="font-headline-md text-[18px] text-primary mb-3">Python</h3>
+<p class="font-body-md text-secondary text-sm">For data cleaning, machine learning experiments, and automation scripts to streamline repetitive tasks.</p>
+</div>
+<!-- Skill Card 2 -->
+<div class="bg-surface border border-outline-variant p-8 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-on-tertiary-container mb-4 text-3xl">database</span>
+<h3 class="font-headline-md text-[18px] text-primary mb-3">SQL</h3>
+<p class="font-body-md text-secondary text-sm">Expertly querying complex relational datasets up to several million rows for direct extraction and analysis.</p>
+</div>
+<!-- Skill Card 3 -->
+<div class="bg-surface border border-outline-variant p-8 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-on-tertiary-container mb-4 text-3xl">table_chart</span>
+<h3 class="font-headline-md text-[18px] text-primary mb-3">Excel</h3>
+<p class="font-body-md text-secondary text-sm">Advanced financial modelling, pivot tables, and quick exploratory analysis for immediate insights.</p>
+</div>
+<!-- Skill Card 4 -->
+<div class="bg-surface border border-outline-variant p-8 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-on-tertiary-container mb-4 text-3xl">dashboard</span>
+<h3 class="font-headline-md text-[18px] text-primary mb-3">Power BI</h3>
+<p class="font-body-md text-secondary text-sm">Creating robust, interactive dashboards and automated business reporting systems for stakeholder tracking.</p>
+</div>
+<!-- Skill Card 5 -->
+<div class="bg-surface border border-outline-variant p-8 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-on-tertiary-container mb-4 text-3xl">insights</span>
+<h3 class="font-headline-md text-[18px] text-primary mb-3">Tableau</h3>
+<p class="font-body-md text-secondary text-sm">Sharing persuasive visual stories that bridge the gap between technical data and non-technical audiences.</p>
+</div>
+<!-- Skill Card 6 -->
+<div class="bg-surface border border-outline-variant p-8 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-on-tertiary-container mb-4 text-3xl">monitoring</span>
+<h3 class="font-headline-md text-[18px] text-primary mb-3">Data Visualization</h3>
+<p class="font-body-md text-secondary text-sm">Adhering to Tufte's principles to maximize data-ink ratio and ensure immediate comprehension of trends.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Projects -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter max-w-container-max mx-auto" id="projects">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">Featured Projects</h2>
+<p class="text-secondary mt-2">Analytical case studies and technical implementations.</p>
+</div>
+<a class="text-primary font-button-text text-button-text flex items-center gap-2 group" href="#">
+                    All Projects 
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Project 1 -->
+<div class="bg-surface border border-outline-variant flex flex-col hover:shadow-lg transition-all group overflow-hidden">
+<div class="h-64 overflow-hidden relative">
+<img alt="Retail Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sophisticated business dashboard display on a modern monitor in a sleek office setting. The screen shows detailed bar charts, line graphs, and heatmaps in a palette of deep navy and soft grays with vibrant orange highlights. The lighting is cool and professional, emphasizing a clean, corporate environment focused on data-driven decision making." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMnJEjJEno2doMOOMcbo_1a7NUoANfA42dWKSo0Ks-c53e4QwFvLJDxiATZj50AA2ZhhB78out56MxW-rlAot8x3ZSjJSRWZEx4U728mvQ3tnI9BEU-u9B7WDV50oEBWIjcK_lIydnG7Zw6opB19jGq8zl1vTeiebNeCQxX13ISqZZ7C9i7Zdf_hkVHtwB9fqyw6GLbrpPQ0x20RE8ygBUinNEj0WVpt0JPsgB_6Nmk6wcVwlWPPXekIkoHisVpCMAT11uUWk7VDw"/>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur px-3 py-1 rounded-sm text-xs font-bold text-primary tracking-wider uppercase">Business Intelligence</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Retail Sales Dashboard</h3>
+<p class="font-body-md text-secondary text-sm mb-6 flex-grow">
+                            Analysed over 50,000 rows of retail sales data to identify top product categories, seasonal demand patterns, and underperforming regions. The findings helped the business reduce overstock by 20% in the following quarter.
+                        </p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="bg-surface-container-high px-3 py-1 rounded-sm text-[10px] font-label-caps text-on-surface-variant">EXCEL</span>
+<span class="bg-surface-container-high px-3 py-1 rounded-sm text-[10px] font-label-caps text-on-surface-variant">POWER BI</span>
+<span class="bg-surface-container-high px-3 py-1 rounded-sm text-[10px] font-label-caps text-on-surface-variant">SQL</span>
+</div>
+<a class="bg-primary text-on-primary text-center py-3 font-button-text text-button-text rounded-lg hover:bg-on-primary-container transition-colors" href="#">
+                            View on GitHub
+                        </a>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="bg-surface border border-outline-variant flex flex-col hover:shadow-lg transition-all group overflow-hidden">
+<div class="h-64 overflow-hidden relative">
+<img alt="Fraud Detection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A creative representation of data security and machine learning, featuring abstract digital patterns of interconnected nodes and glowing data streams. The visual uses a high-contrast dark theme with electric blue and deep navy, punctuated by subtle orange warning symbols. The mood is clinical, precise, and high-tech, representing the complex nature of financial fraud detection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnfx2gPatGOyfjlPaIo7QgwvEqi6Q2PfwfbmfyDBHrueJ89Hu0cn-guke5myierGIgFqC_dojXzuMGDWZSl_EVkg2a17iGcFX82eCOL56zwmQ_LTf4ffyvWRj53dmhNCXFwfcL2bTlDP9w0H5AVBMcOsEp8khyBOOtk90vnIm7iweKuTkafNjf7trT8E9gXYDM0eQvj6XFGGXPqDObXO36Mxv0wOIFmVYdJI8HnByP3S572B0Hyi-IZiXn8Dk_jq17zVDP_r_FPKM"/>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur px-3 py-1 rounded-sm text-xs font-bold text-primary tracking-wider uppercase">Machine Learning</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Fraud Detection Model</h3>
+<p class="font-body-md text-secondary text-sm mb-6 flex-grow">
+                            Built a machine learning model in Python that identified suspicious financial transactions with 87% accuracy on a test dataset of 10,000 transactions. Used logistic regression and decision tree classifiers, evaluated with precision and recall metrics.
+                        </p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="bg-surface-container-high px-3 py-1 rounded-sm text-[10px] font-label-caps text-on-surface-variant">PYTHON</span>
+<span class="bg-surface-container-high px-3 py-1 rounded-sm text-[10px] font-label-caps text-on-surface-variant">SCIKIT-LEARN</span>
+<span class="bg-surface-container-high px-3 py-1 rounded-sm text-[10px] font-label-caps text-on-surface-variant">PANDAS</span>
+</div>
+<a class="bg-primary text-on-primary text-center py-3 font-button-text text-button-text rounded-lg hover:bg-on-primary-container transition-colors" href="#">
+                            View on GitHub
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Contact -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-container px-gutter" id="contact">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Let's Connect</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-8">
+                            I'm open to internships, freelance projects, and collaborations. The fastest way to reach me is email.
+                        </p>
+<div class="space-y-6 mb-10">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center border border-outline-variant">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<p class="text-[10px] font-label-caps text-secondary uppercase">Email Me</p>
+<a class="font-body-md text-primary font-bold hover:text-on-tertiary-container transition-colors" href="mailto:priya.rajan@example.com">priya.rajan@example.com</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center border border-outline-variant">
+<span class="material-symbols-outlined text-primary">share</span>
+</div>
+<div>
+<p class="text-[10px] font-label-caps text-secondary uppercase">Professional Profiles</p>
+<div class="flex gap-4 mt-1">
+<a class="font-body-md text-primary font-bold hover:text-on-tertiary-container transition-colors underline underline-offset-4" href="#">LinkedIn</a>
+<a class="font-body-md text-primary font-bold hover:text-on-tertiary-container transition-colors underline underline-offset-4" href="#">GitHub</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-sm">
+<form class="space-y-6">
+<div>
+<label class="font-label-caps text-label-caps text-secondary uppercase block mb-2">Name</label>
+<input class="w-full bg-surface-container border border-outline-variant rounded-sm px-4 py-3 focus:border-primary focus:ring-0 transition-colors" placeholder="Your Name" type="text"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-secondary uppercase block mb-2">Email</label>
+<input class="w-full bg-surface-container border border-outline-variant rounded-sm px-4 py-3 focus:border-primary focus:ring-0 transition-colors" placeholder="email@example.com" type="email"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-secondary uppercase block mb-2">Message</label>
+<textarea class="w-full bg-surface-container border border-outline-variant rounded-sm px-4 py-3 focus:border-primary focus:ring-0 transition-colors" placeholder="How can I help you?" rows="4"></textarea>
+</div>
+<button class="w-full bg-tertiary-container text-tertiary-fixed font-button-text text-button-text py-4 rounded-lg hover:opacity-90 transition-all uppercase tracking-widest" type="submit">
+                                Send Message
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container border-t border-outline-variant/20 dark:bg-on-background py-8">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-gutter max-w-container-max mx-auto h-full">
+<div class="text-center md:text-left mb-4 md:mb-0">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider block">Priya Rajan Portfolio</span>
+<p class="font-body-md text-[14px] text-secondary mt-1">© 2024 Priya Rajan. Built for Data Narrative.</p>
+</div>
+<div class="flex gap-6">
+<a class="text-secondary font-body-md text-sm hover:text-tertiary-fixed-dim transition-colors" href="#">LinkedIn</a>
+<a class="text-secondary font-body-md text-sm hover:text-tertiary-fixed-dim transition-colors" href="#">GitHub</a>
+<a class="text-secondary font-body-md text-sm hover:text-tertiary-fixed-dim transition-colors" href="#">Tableau</a>
+<a class="text-secondary font-body-md text-sm hover:text-tertiary-fixed-dim transition-colors" href="#">Medium</a>
+</div>
+</div>
+</footer>
+</body></html>
